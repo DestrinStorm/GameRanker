@@ -1,0 +1,44 @@
+Download all games over certain ranking, less expansions
+I "shuffled" the games and began pitting one game against another...
+"Which of these games do I want to play more?"
+That created two piles:
+	like
+	not as much
+I then shuffled the 'not as much' pile and pitted those games against each other,
+	putting the positive response games into the 'like' pile and creating a new 'not so much' pile.
+When finished, I once again shuffled the 'not so much' pile and ran the process one final time.
+The games that ended up in the final 'not so much' are dropped from the system...
+And then it starts all over again...
+Narrow to 100. From that point on, each round worked down to 2-3 games to be "dropped"
+	of course, they dropped into a position on my top 100 games list!
+
+
+Structure
+Original download
+like list
+not as much1
+not as much2
+discard/rank
+
+“this game or that game” choices, each win scoring a point for the winner.
+Games with a five-match losing streak were eliminated from the tournament to make the lists shorter
+
+'game':{'matches':x, 'points':y, 'lstreak': z}
+
+
+
+
+BGG XML API URLs
+
+Documentation: http://boardgamegeek.com/wiki/page/BGG_XML_API2#
+
+http://www.boardgamegeek.com/xmlapi2/collection?username=Darke&wanttoplay=1
+Adding &brief = 1 loses the image and thumbnail entries
+
+http://www.boardgamegeek.com/xmlapi2/thing?id=XXXXX
+Returns thing data
+add &stats=1 to grab statistical info
+
+
+All played, min rating 8, exclude expansions
+https://www.boardgamegeek.com/xmlapi2/collection?username=Darke&minrating=7&excludesubtype=boardgameexpansion&played=1&ff=1&subtype=boardgame

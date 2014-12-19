@@ -1,0 +1,1 @@
+call "C:\Python33\Lib\site-packages\PyQt4\pyuic4.bat" "C:\Dropbox\Coding\GameRanker\Gameranker.ui" -o GameRanker.py
